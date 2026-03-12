@@ -12,6 +12,7 @@ body {
     background-color: #0d1117;
     color: #c9d1d9;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 /* Loading Screen */
@@ -24,7 +25,6 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    transition: opacity 0.5s ease;
 }
 .spinner {
     width: 50px;
@@ -54,7 +54,6 @@ body {
     font-size: 1.5rem;
     font-weight: 800;
     text-decoration: none;
-    letter-spacing: -0.5px;
 }
 .nav-links {
     list-style: none;
@@ -65,10 +64,6 @@ body {
     color: #c9d1d9;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s;
-}
-.nav-links a:hover {
-    color: #58a6ff;
 }
 
 /* Hero Section */
@@ -96,36 +91,6 @@ body {
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
-    transition: background-color 0.2s;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-.btn-primary:hover {
-    background-color: #2ea043;
-}
-.stats-container {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 3rem;
-}
-.stat-box h3 {
-    font-size: 2rem;
-    color: #ffffff;
-}
-.stat-box p {
-    font-size: 0.9rem;
-    color: #8b949e;
-    margin: 0;
-}
-.guarantees {
-    margin-top: 2rem;
-    color: #58a6ff;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
 }
 
 /* Mods Section */
@@ -133,12 +98,6 @@ body {
     padding: 4rem 5%;
     max-width: 1200px;
     margin: 0 auto;
-}
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 3rem;
 }
 .mods-grid {
     display: grid;
@@ -150,22 +109,8 @@ body {
     border: 1px solid #30363d;
     padding: 2rem;
     border-radius: 8px;
-    transition: transform 0.2s, border-color 0.2s;
 }
-.mod-card:hover {
-    transform: translateY(-5px);
-    border-color: #58a6ff;
-}
-.mod-card h3 {
-    color: #ffffff;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-}
-.mod-card p {
-    color: #8b949e;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-}
+.mod-card h3 { color: #ffffff; margin-bottom: 1rem; }
 .btn-secondary {
     background-color: #21262d;
     color: #c9d1d9;
@@ -173,12 +118,6 @@ body {
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
     cursor: pointer;
-    font-weight: 500;
-    transition: all 0.2s;
-}
-.btn-secondary:hover {
-    background-color: #30363d;
-    color: #ffffff;
 }
 
 /* Mod Detail View */
@@ -195,26 +134,7 @@ body {
     border: none;
     color: #58a6ff;
     cursor: pointer;
-    font-size: 1rem;
     margin-bottom: 2rem;
-    display: inline-block;
-}
-.btn-back:hover {
-    text-decoration: underline;
-}
-.mod-detail-content h2 {
-    color: #ffffff;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-.mod-detail-content p {
-    color: #8b949e;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-}
-.download-btn {
-    font-size: 1.1rem;
-    padding: 1rem 2.5rem;
 }
 
 /* Footer */
@@ -222,38 +142,13 @@ footer {
     background-color: #010409;
     border-top: 1px solid #30363d;
     padding: 4rem 5% 2rem;
-    margin-top: 4rem;
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    border-bottom: 1px solid #30363d;
-    padding-bottom: 3rem;
 }
-.footer-col h3 {
-    color: #ffffff;
-    margin-bottom: 1.5rem;
-}
-.footer-col p {
-    color: #8b949e;
-    font-size: 0.9rem;
-}
-.footer-col a {
-    display: block;
-    color: #8b949e;
-    text-decoration: none;
-    margin-bottom: 0.8rem;
-    font-size: 0.9rem;
-}
-.footer-col a:hover {
-    color: #58a6ff;
-}
-.footer-bottom {
-    text-align: center;
-    padding-top: 2rem;
-    color: #8b949e;
-    font-size: 0.85rem;
-}
+.footer-col h3 { color: #ffffff; margin-bottom: 1rem; }
+.footer-col a { display: block; color: #8b949e; text-decoration: none; margin-bottom: 0.5rem; }
