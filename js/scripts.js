@@ -1,43 +1,42 @@
-// Remove loading screen after 800ms to simulate the actual website's boot
-document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        const loader = document.getElementById('loader');
-        loader.style.opacity = '0';
+// Function to hide loader
+function hideLoader() {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.transition = "opacity 0.5s ease";
+        loader.style.opacity = "0";
         setTimeout(() => {
-            loader.style.display = 'none';
+            loader.style.display = "none";
         }, 500);
-    }, 800);
+    }
+}
+
+// 1. Try to hide loader as soon as the page structure is ready
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(hideLoader, 1000); // 1 second delay like the original site
 });
 
-// Logic to show individual mod details and hide the main grid
+// 2. Fail-safe: If the page takes too long, hide it anyway after 3 seconds
+setTimeout(hideLoader, 3000);
+
+// Function to show individual mod details
 function showModDetails(modId) {
-    // Hide grid
     document.getElementById('mods-grid').style.display = 'none';
-    
-    // Show details container
     document.getElementById('mod-details-container').style.display = 'block';
     
-    // Hide all mod detail contents first
+    // Hide all mod detail contents
     const contents = document.getElementsByClassName('mod-detail-content');
     for(let i = 0; i < contents.length; i++) {
         contents[i].style.display = 'none';
     }
     
-    // Show specifically requested mod
+    // Show specific mod
     document.getElementById(modId + '-details').style.display = 'block';
-    
-    // Scroll smoothly to the mod section
-    document.getElementById('mods').scrollIntoView({ behavior: 'smooth' });
+    window.scrollTo({ top: document.getElementById('mods').offsetTop - 100, behavior: 'smooth' });
 }
 
-// Logic to return back to the full grid view
+// Function to return to the grid
 function showGrid() {
-    // Hide details container
     document.getElementById('mod-details-container').style.display = 'none';
-    
-    // Show grid
     document.getElementById('mods-grid').style.display = 'grid';
-    
-    // Scroll smoothly to the mods section
-    document.getElementById('mods').scrollIntoView({ behavior: 'smooth' });
+    window.scrollTo({ top: document.getElementById('mods').offsetTop - 100, behavior: 'smooth' });
 }
